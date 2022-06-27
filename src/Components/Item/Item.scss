@@ -1,0 +1,49 @@
+.Item {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  .item--title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .item--image {
+    align-items: center;
+    justify-content: center;
+    .item--img {
+      object-fit: cover;
+      border-radius: 15px;
+      margin-top: 1%;
+    }
+  }
+  .item--description {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    width: 90%;
+    margin-top: 1%;
+  }
+  .item--buttonholder {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .buyitem--button {
+      border: solid transparent;
+      width: 30%;
+      background-color: #1dd1a1;
+      border-radius: 10px;
+      height: 70%;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 1.4rem;
+    }
+  }
+}

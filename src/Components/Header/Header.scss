@@ -1,0 +1,63 @@
+.header {
+  background-color: #222f3e;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+  display: flex;
+
+  .header--rbutton__container {
+    width: 18%;
+    margin-left: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0.5%;
+    .header--rbutton {
+      width: 45%;
+      height: 80%;
+      border: solid transparent;
+      background-color: #1dd1a1;
+      border-radius: 10px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #000;
+    }
+    .header--rbutton:hover {
+      background-color: #03f1b2;
+    }
+  }
+  .header--center {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    width: 64%;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+    margin-top: 0.5%;
+  }
+  .header--lbutton__container {
+    width: 18%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1%;
+    margin-top: 0.5%;
+    .header--lbutton {
+      width: 45%;
+      height: 80%;
+      border: solid transparent;
+      background-color: #1dd1a1;
+      border-radius: 10px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #000;
+    }
+    .header--lbutton:hover {
+      background-color: #03f1b2;
+    }
+  }
+}

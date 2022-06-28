@@ -2,25 +2,30 @@ import React from "react";
 import "./Item.scss";
 import yzy from "../../Assets/Images/yzy.jpg";
 
-export const Item = (props: any) => {
+interface Props {
+  title: string;
+  description: string;
+  rating?: string;
+  img?: string;
+  price: number;
+}
+
+export const Item = ({ title, description, rating, img, price }: Props) => {
   return (
     <div className="Item">
-      <div className="item--title">{props.title}</div>
+      <div className="item--title">{title}</div>
       <div className="item--image">
         <img
           className="item--img"
-          src={yzy}
+          src={img}
           alt="yzy"
           width="220"
           height="220"
         />
       </div>
-      <div className="item--description">
-        The Adidas Yeezy 350 Boost v2 is the fifth shoe released in Kanye West’s
-        collection. Made with top-of-the-line Primeknit fabric and Boost
-        cushioning.
-      </div>
+      <div className="item--description">{description}</div>
       <div className="item--buttonholder">
+        <div className="item--price">{price}$</div>
         <button className="buyitem--button">Buy</button>
       </div>
     </div>
